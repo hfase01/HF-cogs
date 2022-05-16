@@ -1,3 +1,7 @@
+import random
+from typing import Literal, Optional
+
+import discord
 from redbot.core import commands
 from redbot.core.bot import Red
 
