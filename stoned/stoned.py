@@ -1,4 +1,7 @@
 from redbot.core import commands
+from redbot.core.bot import Red
+
+RequestType = Literal["discord_deleted_user", "owner", "user", "user_strict"]
 
 class Stoned(commands.Cog):
     """How stoned are you?"""
