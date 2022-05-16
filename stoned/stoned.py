@@ -22,9 +22,9 @@ class Stoned(commands.Cog):
             buzz = random.randint(90, 100)
         else:
             buzz = random.randint(-10, 90)
-        if buzz >= 160:
+        if buzz >= 95:
             emoji = self.bot.get_emoji(758821860972036106) or "<:weed:954756437584781332>"
-        elif buzz >= 100:
+        elif buzz >= 90:
             emoji = self.bot.get_emoji(758821993768026142) or "🤯"
         else:
             emoji = self.bot.get_emoji(758821971319586838) or "😔"
