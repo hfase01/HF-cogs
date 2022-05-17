@@ -18,8 +18,8 @@ class Stoned(commands.Cog):
         """Check how stoned you are."""
         member = member or ctx.author
         random.seed(member.id + self.bot.user.id)
-        if await self.bot.is_owner(132329250899492864):
-            buzz = random.randint(95, 100)
+        if await self.bot.is_owner(member):
+            buzz = random.randint(90, 100)
         else:
             buzz = random.randint(-10, 90)
         if buzz >= 95:
