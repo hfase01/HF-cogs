@@ -18,13 +18,13 @@ class Stoned(commands.Cog):
         """Check how stoned you are."""
         member = member or ctx.author
         random.seed(member.id + self.bot.user.id)
-        if await self.bot.is_admin(member):
+        if await self.bot.is_staff(member):
             buzz = random.randint(90, 100)
         else:
             buzz = random.randint(-5, 90)
         if buzz >= 95:
             emoji = self.bot.get_emoji(758821860972036106) or "<:weed:954756437584781332>"
-        elif buzz >= 90:
+        elif buzz >= 60:
             emoji = self.bot.get_emoji(758821993768026142) or "🤯"
         else:
             emoji = self.bot.get_emoji(758821971319586838) or "😔"
